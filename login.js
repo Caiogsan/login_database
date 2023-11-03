@@ -26,9 +26,9 @@ server.post("/login389212", async (req, res) => {
 server.get("/login389212", async (req) => {
   const search = req.query.search;
 
-  const itens = await database.list(search);
+  const users = await database.list(search);
 
-  return itens;
+  return users;
 });
 
 server.put("/login389212", async(req, res) => {

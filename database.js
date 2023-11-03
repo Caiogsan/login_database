@@ -20,7 +20,7 @@ export class Database {
 
         const { email, username, password } = user
 
-        await sql`INSERT INTO users (email, username, password) VALUES (${email}, ${username}, ${password})`
+        await sql`INSERT INTO users (id, email, username, password) VALUES (${itemId}, ${email}, ${username}, ${password})`
     }
 
     async update(id, user){
