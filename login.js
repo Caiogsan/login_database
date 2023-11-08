@@ -1,8 +1,13 @@
 import { fastify } from "fastify";
+import fastifyCors from "fastify"
 import { Database } from "./database.js";
 
 const server = fastify();
 const database = new Database();
+
+server.register(fastifyCors, {
+  origin: "http://localhost:3000"
+})
 
 server.addHook("onRequest", (req, res, done) => {
   res.header("Access-Control-Allow-Origin", "http://localhost:3000");
