@@ -1,5 +1,5 @@
 import { fastify } from "fastify";
-import fastifyCors from "fastify-cors"
+import fastifyCors from "@fastify/cors"
 import { Database } from "./database.js";
 
 const server = fastify();
