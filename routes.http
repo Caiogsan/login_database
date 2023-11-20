@@ -12,3 +12,16 @@ Content-Type: application/json
 GET https://gym-login-database.onrender.com/login389212
 
 ###
+
+PUT https://gym-login-database.onrender.com/login389212
+Content-Type: application/json
+
+{
+    "email": "caiogsan@hotmail.com",
+    "username": "caiogsan",
+    "password": "123456789"
+}
+
+###
+
+DELETE https://gym-login-database.onrender.com/login389212/1ba7bea9-bfcc-4c18-9601-40706b3caac1

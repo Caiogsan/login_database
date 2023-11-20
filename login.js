@@ -6,12 +6,12 @@ const server = fastify();
 const database = new Database();
 
 server.register(fastifyCors, {
-  origin: "http://localhost:3000"
+  origin: "https://caiogsan.github.io"
 })
 
 server.addHook("onRequest", (req, res, done) => {
-  res.header("Access-Control-Allow-Origin", "http://localhost:3000");
-  res.header("Access-Control-Allow-Methods", "http:localhost:3000");
+  res.header("Access-Control-Allow-Origin", "https://caiogsan.github.io");
+  res.header("Access-Control-Allow-Methods", "https://caiogsan.github.io");
   res.header("Access-Control-Allow-Headers", "Content-Type");
   done();
 });
